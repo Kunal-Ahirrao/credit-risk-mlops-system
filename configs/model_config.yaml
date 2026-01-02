@@ -1,0 +1,13 @@
+model:
+  name: credit_risk_xgboost
+  n_estimators: 300
+  max_depth: 5
+  learning_rate: 0.05
+  subsample: 0.9
+  colsample_bytree: 0.9
+
+data:
+  target_column: is_high_risk
+  id_column: customer_id
+  test_size: 0.2
+  random_state: 42
